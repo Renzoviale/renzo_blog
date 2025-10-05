@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renzo Viale | Blog</title>
+  <meta name="description" content="Personal site and essays by Renzo Viale." />
+  <link rel="preload" href="/styles.css" as="style" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Hey, I am Renzo</h1>
+    
+    <section class="intro">
+      <p>
+        I build things on the internet. Currently writing and exploring software, startups, and learning systems.
+      </p>
+      <p>
+        Before that I was playing a ton of video games, did research at stanford, built extracurrify.com, and did y-combinator s25 batch (for nozomio).
+      </p>
+      <p>
+        I got interested in business when I was 10 and started programming at 15.
+      </p>
+    </section>
+
+    <p class="location">🌍 SF</p>
+    <p class="local-time" id="live-time">13:21 local time</p>
+
+    <nav class="links">
+      <a href="/essays/">essays</a>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://x.com/renzo_viale" target="_blank" rel="noopener noreferrer">𝕏 @renzo_viale</a>
+      <a href="https://github.com/Renzoviale" target="_blank" rel="noopener noreferrer">⚡ github.com/renzoviale</a>
+      <a href="https://www.linkedin.com/in/renzo-viale/" target="_blank" rel="noopener noreferrer">💼 linkedin.com/in/renzo-viale</a>
+      <a href="https://renzoviale.substack.com" target="_blank" rel="noopener noreferrer">📰 renzoviale.substack.com</a>
+      <a href="mailto:renzo@oqoqo.ai">✉️ renzo@oqoqo.ai</a>
+    </div>
+  </main>
+  
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const timeElement = document.getElementById('live-time');
+      if (timeElement) {
+        timeElement.textContent = `${hours}:${minutes} local time`;
+      }
+    }
+    
+    // Update time immediately and then every minute
+    updateTime();
+    setInterval(updateTime, 60000);
+  </script>
+</body>
+</html>
