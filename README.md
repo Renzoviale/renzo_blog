@@ -1,6 +1,6 @@
 # Renzo Viale — Blog
 
-A minimal, fast static site inspired by https://www.arlanrakh.com/
+A minimal, fast static site inspired by https://www.renzoviale.com/
 
 ## Structure
 - `index.html`: homepage
@@ -18,11 +18,6 @@ python -m http.server 5173
 npx http-server -p 5173
 ```
 Visit http://localhost:5173
-
-## Deployment options
-- GitHub Pages: push this repo, enable Pages for the `main` branch root.
-- Netlify: drag-and-drop the folder or connect repo. Base dir: `/`, publish dir: `/`.
-- Vercel: import the repo as a static project. Output directory: `/`.
 
 ## Customization TODOs
 - Update links on `index.html` with your real profiles and email.
